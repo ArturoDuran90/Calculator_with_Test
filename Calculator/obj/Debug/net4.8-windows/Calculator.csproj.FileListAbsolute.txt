@@ -1,0 +1,6 @@
+C:\NeumontClasses\PRO460\Calculator\obj\Debug\net4.8-windows\Calculator.csproj.AssemblyReference.cache
+C:\NeumontClasses\PRO460\Calculator\obj\Debug\net4.8-windows\Calculator.csproj.SuggestedBindingRedirects.cache
+C:\NeumontClasses\PRO460\Calculator\obj\Debug\net4.8-windows\MainWindow.g.cs
+C:\NeumontClasses\PRO460\Calculator\obj\Debug\net4.8-windows\App.g.cs
+C:\NeumontClasses\PRO460\Calculator\obj\Debug\net4.8-windows\Calculator_MarkupCompile.cache
+C:\NeumontClasses\PRO460\Calculator\obj\Debug\net4.8-windows\Calculator_MarkupCompile.lref

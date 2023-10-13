@@ -1,0 +1,71 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="600" Width="500">
+    <DockPanel>
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Calculator"
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                FontSize="20" Grid.ColumnSpan="4"/>
+            <Label x:Name="lblResult" Content="0"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                FontSize="60" Grid.ColumnSpan="4"/>
+            <Button x:Name="btnAc" Content="AC" Click="btnAc_Click"
+                    Grid.Row="1" Foreground="Black" FontSize="20"/>
+            <Button x:Name="btnNegative" Content="+/-" Click="btnNegative_Click"
+                    Grid.Row="1" Grid.Column="1" Foreground="White" FontSize="20" Background="Gray"/>
+            <Button x:Name="btnSquare" Content="√a" Click="btnSquare_Click"
+                    Grid.Row="1" Grid.Column="2" Foreground="White" FontSize="20" Background="Gray"/>
+            <Button x:Name="btnDivide" Content="÷" Click="btnOperation_Click"
+                    Grid.Row="1" Grid.Column="3" Foreground="White" FontSize="30" Background="Orange"/>
+            <Button x:Name="btnSeven" Content="7" Click="btnNumber_Click"
+                    Grid.Row="2" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnEight" Content="8" Click="btnNumber_Click"
+                    Grid.Row="2" Grid.Column="1" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnNine" Content="9" Click="btnNumber_Click"
+                    Grid.Row="2" Grid.Column="2" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnMultiple" Content="×" Click="btnOperation_Click"
+                    Grid.Row="2" Grid.Column="3" Foreground="White" FontSize="30" Background="Orange"/>
+            <Button x:Name="btnFour" Content="4" Click="btnNumber_Click"
+                    Grid.Row="3" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnFive" Content="5" Click="btnNumber_Click"
+                    Grid.Row="3" Grid.Column="1" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnSix" Content="6" Click="btnNumber_Click"
+                    Grid.Row="3" Grid.Column="2" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnMinus" Content="-" Click="btnOperation_Click"
+                    Grid.Row="3" Grid.Column="3" Foreground="White" FontSize="30" Background="Orange"/>
+            <Button x:Name="btnOne" Content="1" Click="btnNumber_Click"
+                    Grid.Row="4" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnTwo" Content="2" Click="btnNumber_Click"
+                    Grid.Row="4" Grid.Column="1" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnThree" Content="3" Click="btnNumber_Click"
+                    Grid.Row="4" Grid.Column="2" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnPlus" Content="+" Click="btnOperation_Click"
+                    Grid.Row="4" Grid.Column="3" Foreground="White" FontSize="30" Background="Orange"/>
+            <Button x:Name="btnZero" Content="0" Click="btnNumber_Click"
+                    Grid.Row="5" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnDot" Content="." Click="btnDot_Click"
+                    Grid.Row="5" Grid.Column="1" Foreground="White" FontSize="30" Background="Gray"/>
+            <Button x:Name="btnEqual" Content="=" Click="btnEqual_Click"
+                    Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="2" Foreground="White" FontSize="30" Background="Orange"/>
+        </Grid>
+    </DockPanel>
+</Window>
